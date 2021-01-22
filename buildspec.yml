@@ -5,7 +5,6 @@ phases:
     commands:
       - curl -sL https://deb.nodesource.com/setup_14.x | bash -
       - apt install -y nodejs
-      - apt install npm
   pre_build:
     commands:
       - npm install
