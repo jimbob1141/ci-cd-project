@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MainPageRoot from './MainPageRoot'
+import { MainPageRoot } from './MainPageRoot'
 
 ReactDOM.render(
-	<MainPageRoot />
+	<MainPageRoot />,
 	document.getElementById('root')
 	)
