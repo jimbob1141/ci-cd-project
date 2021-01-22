@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo installing node js
+      - apt install nodejs
+      - echo installing npm
+      - apt install npm
+  pre-build:
+    commands:
+      - echo installing dependencies
+      - npm install
+  build:
+    commands:
+      echo running jest tests
+      - npm test
+      echo running web pack build
+      - npm run build
+
+artifacts:
+  files:
+    - "**/*"
+    discard-paths: no
+    base-directory: dist
