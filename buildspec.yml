@@ -12,6 +12,7 @@ phases:
       - npm install
   build:
     commands:
+      #runs jest
       - npm test
       - npm run build
 
