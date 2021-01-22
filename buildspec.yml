@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      #install node
       - curl -sL https://deb.nodesource.com/setup_14.x | bash -
       - apt install -y nodejs
   pre_build:
