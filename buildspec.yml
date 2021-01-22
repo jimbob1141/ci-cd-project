@@ -7,7 +7,7 @@ phases:
       - apt install nodejs
       - echo installing npm
       - apt install npm
-  pre-build:
+  pre_build:
     commands:
       - echo installing dependencies
       - npm install
