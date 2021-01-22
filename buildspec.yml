@@ -13,13 +13,13 @@ phases:
       - npm install
   build:
     commands:
-      echo running jest tests
+      - echo running jest tests
       - npm test
-      echo running web pack build
+      - echo running web pack build
       - npm run build
 
 artifacts:
   files:
     - "**/*"
-    discard-paths: no
-    base-directory: dist
+  discard-paths: no
+  base-directory: dist
